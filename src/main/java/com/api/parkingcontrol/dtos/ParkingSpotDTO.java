@@ -20,6 +20,9 @@ public class ParkingSpotDTO {
     private String brandCar;
 
     @NotBlank
+    private String modelCar;
+
+    @NotBlank
     private String colorCar;
 
     @NotBlank
