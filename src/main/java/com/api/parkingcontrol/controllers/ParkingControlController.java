@@ -46,6 +46,11 @@ public class ParkingControlController {
         return ResponseEntity.status(HttpStatus.OK).body(parkingSpotService.findAll());
     }
 
+//    public ResponseEntity<Page<ParkingSpotModel>> getAllParkingSpots(@PageableDefault(page = 0, size = 0, sort = "id",
+//    direction = Sort.Direction.ASC) Pageable pageable) {
+//        return ResponseEntity.status(HttpStatus.OK).body(parkingSpotService.findAll(pageable));
+//    }
+
     // GET ONE
     @GetMapping("/{id}")
     public ResponseEntity<Object> getOneParkingSpot(@PathVariable(value = "id")UUID id) {
